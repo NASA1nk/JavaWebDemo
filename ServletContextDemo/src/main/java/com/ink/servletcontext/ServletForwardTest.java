@@ -1,5 +1,6 @@
 package com.ink.servletcontext;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -9,20 +10,17 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class GetServletTest extends HttpServlet {
+public class ServletForwardTest extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletContext servletContext = this.getServletContext();
-        String username = (String) servletContext.getAttribute("username");
 
-        resp.setContentType("text/html");
-        resp.setCharacterEncoding("utf-8");
-//        共享数据
-        PrintWriter writer = resp.getWriter();
-        writer.println("姓名"+username);
-//        获取初始化参数
-        String url = servletContext.getInitParameter("url");
-        resp.getWriter().println(url);
+        System.out.println("进入了ServletForwardTest");
+//        转发的请求路径
+        RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/getcontext");
+//        调用forward实现请求转发
+        requestDispatcher.forward(req,resp);
+//        servletContext.getRequestDispatcher("/getcontext").forward(req,resp);
     }
 
     @Override

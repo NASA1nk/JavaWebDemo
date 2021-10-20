@@ -5,6 +5,12 @@
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
   <display-name>Archetype Created Web Application</display-name>
 
+  <!--配置一些web应用初始化参数-->
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/mybatis</param-value>
+  </context-param>
+
   <servlet>
     <servlet-name>hello</servlet-name>
     <servlet-class>com.ink.servletcontext.ServletContextTest</servlet-class>
@@ -23,6 +29,16 @@
   <servlet-mapping>
     <servlet-name>getcontext</servlet-name>
     <url-pattern>/getcontext</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>forward</servlet-name>
+    <servlet-class>com.ink.servletcontext.ServletForwardTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>forward</servlet-name>
+    <url-pattern>/forward</url-pattern>
   </servlet-mapping>
 
 </web-app>
