@@ -41,4 +41,14 @@
     <url-pattern>/forward</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>prop</servlet-name>
+    <servlet-class>com.ink.servletcontext.ServletPropTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>prop</servlet-name>
+    <url-pattern>/prop</url-pattern>
+  </servlet-mapping>
+
 </web-app>
