@@ -11,6 +11,7 @@
     <modules>
         <module>ServletDemo</module>
         <module>ServletContextDemo</module>
+        <module>ResponseDemo</module>
     </modules>
 
     <properties>
