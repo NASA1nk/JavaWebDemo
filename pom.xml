@@ -13,6 +13,7 @@
         <module>ServletContextDemo</module>
         <module>ResponseDemo</module>
         <module>RequestDemo</module>
+        <module>CookieSessionDemo</module>
     </modules>
 
     <properties>
