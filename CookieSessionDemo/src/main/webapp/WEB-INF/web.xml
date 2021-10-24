@@ -11,11 +11,32 @@
 
   <servlet>
     <servlet-name>cookie</servlet-name>
-    <servlet-class>com.ink.servlet.CookieDemo</servlet-class>
+    <servlet-class>com.ink.servlet.CookieTest</servlet-class>
   </servlet>
 
   <servlet-mapping>
     <servlet-name>cookie</servlet-name>
     <url-pattern>/cookie</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>session</servlet-name>
+    <servlet-class>com.ink.servlet.SessionTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>session</servlet-name>
+    <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>name</servlet-name>
+    <servlet-class>com.ink.servlet.SessionGetTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>name</servlet-name>
+    <url-pattern>/name</url-pattern>
+  </servlet-mapping>
+
 </web-app>

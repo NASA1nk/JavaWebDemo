@@ -11,12 +11,12 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class CookieDemo extends HttpServlet {
+public class CookieTest extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        中文乱码问题，设置编码
         req.setCharacterEncoding("utf-8");
-        resp.setCharacterEncoding("gbk");
+        resp.setCharacterEncoding("utf-8");
         resp.setHeader("content-type", "text/html; charset=UTF-8");
 //        获取请求中携带的cookie
         Cookie[] cookies = req.getCookies();
