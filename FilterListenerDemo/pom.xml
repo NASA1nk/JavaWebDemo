@@ -30,15 +30,14 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
-      <scope>test</scope>
     </dependency>
-    <!--        JSP依赖-->
+<!--    JSP依赖-->
     <dependency>
       <groupId>jakarta.servlet.jsp</groupId>
       <artifactId>jakarta.servlet.jsp-api</artifactId>
       <version>3.0.0</version>
     </dependency>
-    <!--        Servlet依赖-->
+<!--    Servlet依赖-->
     <dependency>
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
