@@ -16,6 +16,7 @@
         <module>CookieSessionDemo</module>
         <module>JavaBeanDemo</module>
         <module>FilterListenerDemo</module>
+        <module>JdbcDemo</module>
     </modules>
 
     <properties>
