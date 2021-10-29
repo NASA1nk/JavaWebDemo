@@ -6,7 +6,7 @@ public class JdbcTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 //        配置信息
 //        解决乱码问题
-        String url = "jdbc:mysql://10.2.14.105:3305/test?useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://10.2.14.105:3305/test?useUnicode=true&characterEncoding=utf-8&useSSL=false";
         String username = "root";
         String password = "1";
 
